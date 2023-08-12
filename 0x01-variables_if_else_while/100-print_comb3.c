@@ -9,23 +9,26 @@
 int main(void)
 {
 	int i = 0;
-	int j = 1;
+	int j = 0;
 
-	putchar('0');
-	putchar('1');
-
-	while (j < 10)
+	while (i < 10)
 	{
-		while (i < j)
+		while (j < 10)
 		{
-			putchar(',');
-			putchar(' ');
-			putchar(i + '0');
-			putchar(j + '0');
-			i++;
+			if (i < j)
+			{
+				putchar(i);
+				putchar(j);
+				if (i != '8' || (i == '8' && j != '9'))
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
+			j++;
 		}
-		i = 0;
-		j++;
+		j = 0;
+		i++;
 	}
 	putchar('\n');
 	return (0);
