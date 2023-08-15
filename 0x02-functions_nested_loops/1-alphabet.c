@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * main - holds the statements that print the alphabet
+ * print_alphabet - holds the statements that print the alphabet
  *
  * Return: 0
  */
@@ -9,7 +9,7 @@ void print_alphabet(void)
 {
 	char c = 'a';
 
-	while (c < 'z')
+	while (c <= 'z')
 	{
 		_putchar(c);
 		c++;
