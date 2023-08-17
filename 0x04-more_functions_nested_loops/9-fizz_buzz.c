@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
  * main - prints 1 to 100, print Fizz for 3s and Buzz for 5s
@@ -27,5 +28,6 @@ int main(void)
 			printf("%d ", i);
 		}
 	}
+	printf("\n");
 	return (0);
 }
