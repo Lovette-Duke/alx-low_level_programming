@@ -30,5 +30,6 @@ int main(void)
 			break;
 		}
 	}
+	printf("Tada! congrats");
 	return (0);
 }
