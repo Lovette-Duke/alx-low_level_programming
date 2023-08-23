@@ -4,6 +4,7 @@
  * _strncat - concatenates two strings but has a byte limit
  * @dest: the destination string
  * @src: the string to be concatenated
+ * @n: the specified byte that can be concatenated
  * Return: dest
  */
 
