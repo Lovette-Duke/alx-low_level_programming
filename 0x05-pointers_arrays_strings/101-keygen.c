@@ -30,6 +30,6 @@ int main(void)
 			break;
 		}
 	}
-	printf("Tada! congrats");
+	printf("Tada! congrats\n");
 	return (0);
 }
