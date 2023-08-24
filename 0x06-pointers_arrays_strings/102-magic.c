@@ -1,8 +1,4 @@
 #include <stdio.h>
-/**
- * main - returns an integer deferenced by p
- * Return: 0
- */
 
 int main(void)
 {
