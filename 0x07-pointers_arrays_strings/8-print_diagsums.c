@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * print_diagsums - prints sum of 2 diagonals of a square matrix
+ * print_diagsums - prints sum of two diagonals of a square matrix
  * @a: the array of arrays
  * @size: the size of the array
  * Return: None
@@ -11,7 +11,8 @@
 void print_diagsums(int *a, int size)
 {
 	int i = 0;
-	unsigned int s1, s2;
+	unsigned int s1 = 0;
+	unsigned int s2 = 0;
 
 	while (i < size)
 	{
