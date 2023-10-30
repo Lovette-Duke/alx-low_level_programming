@@ -25,10 +25,16 @@ int append_text_to_file(const char *filename, char *text_content)
 	{
 		for (len = 0; text_content[len]; len++)
 			len++;
-		w = write(file, text_content, len);
+		if (len > 0)
+		{
+			w = write(file, text_content, len);
 
-		if (w == -1)
-			return (-1);
+			if (w == -1)
+			{
+				close(file);
+				return (-1);
+			}
+		}
 	}
 	close(file);
 	return (1);
